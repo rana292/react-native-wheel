@@ -273,7 +273,7 @@ class GenerateCanvas extends Component {
   }
 
   onParentClick(data,name,idx) {
-    console.log("Generate Canvas parent click",data,name,idx)
+    this.props.ranaclicker(data,name,idx);
     var a = [];
     a = Object.assign(this.state.parentAngles)
     this.setState({ backup: a });
